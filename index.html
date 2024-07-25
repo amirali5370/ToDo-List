@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="pink">
+            <h1>لیست انجام کارهای روزمره</h1>
+            <div id="form_wrp">
+                <p class="new">یادداشت کار جدید: </p>
+                <form action="#">
+                    <input type="text" id="addInp" maxlength="40" autocomplete="off">
+                    <button id="add" type="button" onclick="addObject()">اضافه کردن</button>
+                </form>
+            </div>
+        </div>
+        <div class="white">
+            <div id="list_wrp">
+                <ul>
+                    <li id="edit_wrp">
+                        <span>ویرایش: </span>
+                        <input type="text" id="editInp" maxlength="40" autocomplete="off">
+                        <button id="edit" type="button" onclick="editObject()">ثبت</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
